@@ -42,3 +42,4 @@ Ctrl+D: Delete
 
 Ctrl+H: Share
 
+오픈소스 주소 : https://github.com/farmerbb/Notepad
