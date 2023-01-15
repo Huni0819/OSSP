@@ -1,45 +1,17 @@
 ![notepad readme](https://user-images.githubusercontent.com/36028424/39695245-83b15cfc-521c-11e8-935c-c4a9cdcfbe90.png)
 
-A simple, bare-bones, no-frills note taking app, recently [rewritten from the ground up](https://github.com/farmerbb/Notepad/blob/master/README-NEW.md).
-
-## Features
-
-* Quickly create and save plain-text notes
-
-* Optionally create rich-text notes using Markdown or HTML
-
-* Beautiful, easy-to-use UI with Material Design elements
-
-* Dual-pane view for tablets
-
-* Share notes to and receive text from other apps
-
-* Auto-saves drafts
-
-* View Mode for notes with clickable links
-
-* Sort notes by date or by name
-
-* Keyboard shortcuts for common actions (see below)
-
-* Import and export notes to external storage
-
-* Zero permissions and absolutely zero ads
-
-* Open-source
-
-#### Keyboard shortcuts
-
-Search+M: launch Notepad from any application
-
-Ctrl+N: New Note
-
-Ctrl+E: Edit Note
-
-Ctrl+S: Save
-
-Ctrl+D: Delete
-
-Ctrl+H: Share
-
 오픈소스 주소 : https://github.com/farmerbb/Notepad
+
+Apache 2.0 라이센스 사용
+
+## 개선할 사항
+
+* 코드 분석하며 주석 달기
+* 남에게 공개하고 싶지 않은 노트를 위한 비밀번호 설정으로 암호화
+* 메모의 중요도 선택 항목 추가 -> 삭제시 해당 노트가 포함되면 한번더 알림
+* 어플 자체에서 언어 선택 항목 추가
+
+
+
+
+
