@@ -34,6 +34,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.LayoutDirection
 import com.farmerbb.notepad.R
 
+//돌아가기 버튼
 @Composable
 fun BackButton(onClick: () -> Unit = {}) {
     val imageVector = when(LocalLayoutDirection.current) {
@@ -50,6 +51,7 @@ fun BackButton(onClick: () -> Unit = {}) {
     }
 }
 
+//작성 버튼
 @Composable
 fun EditButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {
@@ -61,6 +63,7 @@ fun EditButton(onClick: () -> Unit = {}) {
     }
 }
 
+//저장 버튼
 @Composable
 fun SaveButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {
@@ -72,6 +75,7 @@ fun SaveButton(onClick: () -> Unit = {}) {
     }
 }
 
+//삭제 버튼
 @Composable
 fun DeleteButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {
@@ -83,6 +87,7 @@ fun DeleteButton(onClick: () -> Unit = {}) {
     }
 }
 
+//더보기 버튼
 @Composable
 fun MoreButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {
@@ -94,6 +99,7 @@ fun MoreButton(onClick: () -> Unit = {}) {
     }
 }
 
+//선택버튼
 @Composable
 fun MultiSelectButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {
@@ -105,6 +111,7 @@ fun MultiSelectButton(onClick: () -> Unit = {}) {
     }
 }
 
+//전체선택 버튼
 @Composable
 fun SelectAllButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {
@@ -116,6 +123,7 @@ fun SelectAllButton(onClick: () -> Unit = {}) {
     }
 }
 
+//내보내기 버튼
 @Composable
 fun ExportButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {

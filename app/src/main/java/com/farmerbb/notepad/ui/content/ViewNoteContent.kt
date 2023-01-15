@@ -48,6 +48,7 @@ import com.halilibo.richtext.ui.RichText
 import com.halilibo.richtext.ui.RichTextThemeIntegration
 import com.linkifytext.LinkifyText
 
+//특정 노트패드 선택시 화면 구성
 @Composable
 fun ViewNoteContent(
     text: String,

@@ -29,6 +29,7 @@ import androidx.compose.ui.unit.LayoutDirection
 import com.farmerbb.notepad.R
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
+//노트패드 테마
 @Composable
 fun NotepadTheme(
     isLightTheme: Boolean,

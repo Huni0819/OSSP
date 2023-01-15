@@ -49,6 +49,8 @@ import com.farmerbb.notepad.utils.safeGetOrDefault
 import java.text.DateFormat
 import java.util.Date
 
+//초기화면 생성된 노트패드 리스트 표현
+
 private val Date.noteListFormat: String get() = DateFormat
     .getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT)
     .format(this)

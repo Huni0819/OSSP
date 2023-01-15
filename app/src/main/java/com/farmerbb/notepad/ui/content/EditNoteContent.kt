@@ -44,6 +44,8 @@ import com.farmerbb.notepad.ui.components.RtlTextWrapper
 import com.farmerbb.notepad.ui.previews.EditNotePreview
 import kotlinx.coroutines.delay
 
+
+//노트패드 작성 화면 구성
 private fun String.toTextFieldValue() = TextFieldValue(
     text = this,
     selection = TextRange(length)

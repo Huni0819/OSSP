@@ -61,6 +61,7 @@ class NotepadActivity: ComponentActivity(), FSAFActivityCallbacks {
         fileChooser.removeCallbacks()
     }
 
+
     override fun fsafStartActivityForResult(intent: Intent, requestCode: Int) {
         when(intent.action) {
             Intent.ACTION_OPEN_DOCUMENT -> intent.type = "text/plain"

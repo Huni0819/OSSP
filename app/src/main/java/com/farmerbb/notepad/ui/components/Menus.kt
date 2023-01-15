@@ -24,6 +24,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.farmerbb.notepad.R
 
+
+//기본 화면 MoreButton 메뉴 내용 출력 함수
 @Composable
 fun NoteListMenu(
     showMenu: Boolean,
@@ -46,6 +48,7 @@ fun NoteListMenu(
     }
 }
 
+//노트 클릭시 MoreButton 메뉴 내용 출력 함수
 @Composable
 fun NoteViewEditMenu(
     showMenu: Boolean = false,
@@ -68,6 +71,7 @@ fun NoteViewEditMenu(
     }
 }
 
+//?
 @Composable
 fun StandaloneEditorMenu(
     showMenu: Boolean = false,
@@ -86,6 +90,7 @@ fun StandaloneEditorMenu(
     }
 }
 
+//메뉴 목록 생성 함수
 @Composable
 fun MenuItem(
     @StringRes stringRes: Int,

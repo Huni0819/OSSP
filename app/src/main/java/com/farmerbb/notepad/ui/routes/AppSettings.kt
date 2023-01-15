@@ -42,6 +42,7 @@ import de.schnettler.datastore.compose.material.model.Preference.PreferenceItem.
 import de.schnettler.datastore.compose.material.model.Preference.PreferenceItem.SwitchPreference
 import org.koin.androidx.compose.getViewModel
 
+//설정버튼 클릭시 생성되는 다이얼로그창
 @Composable
 fun SettingsDialog(onDismiss: () -> Unit) {
     Dialog(onDismissRequest = onDismiss) {
@@ -51,6 +52,7 @@ fun SettingsDialog(onDismiss: () -> Unit) {
     }
 }
 
+//설정 다이얼로그창 구현
 @Composable
 fun NotepadPreferenceScreen(
     vm: NotepadViewModel = getViewModel()
