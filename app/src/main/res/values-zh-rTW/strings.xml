@@ -107,12 +107,11 @@
     </string-array>
     <string name="action_select_language">語文</string>
     <string-array name="language_list">
-        <item>english</item>
-        <item>japan</item>
-        <item>china</item>
-        <item>taiwan</item>
-        <item>russia</item>
-        <item>korea</item>
+        <item>English</item>
+        <item>Japan</item>
+        <item>China</item>
+        <item>Taiwan</item>
+        <item>Korea</item>
     </string-array>
 
 </resources>

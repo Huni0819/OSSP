@@ -113,7 +113,7 @@ fun NotepadPreferenceScreen(
                 title = stringResource(id = R.string.action_select_language),
                 singleLineTitle = false,
                 entries = listPrefEntries(
-                    keyRes = R.array.language_list,
+                    keyRes = R.array.language_list_values,
                     valueRes = R.array.language_list
                 ),
             ),

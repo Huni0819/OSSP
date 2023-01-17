@@ -15,6 +15,7 @@
 
 package com.farmerbb.notepad.data
 
+
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
 import com.farmerbb.notepad.R
@@ -28,7 +29,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import java.util.*
 
+//설정 창 매니저
 class PreferenceManager private constructor(
     private val dataStoreManager: DataStoreManager,
     private val scope: CoroutineScope,
@@ -56,7 +59,8 @@ class PreferenceManager private constructor(
             else -> R.color.text_color_secondary_dark
         }
     }
-
+    
+    //폰트 크기
     val textFontSize get() = Prefs.FontSize.mapToFlow { fontSize ->
         when (fontSize) {
             "smallest" -> 12.sp
@@ -82,6 +86,16 @@ class PreferenceManager private constructor(
             "sans" -> FontFamily.SansSerif
             "serif" -> FontFamily.Serif
             else -> FontFamily.Monospace
+        }
+    }
+
+    val s_language get() = Prefs.SelectLanguage.mapToFlow { selectlanguage ->
+        when(selectlanguage) {
+            "english" -> Locale.getDefault()
+            "japan" -> Locale.JAPAN
+            "china" -> Locale.CHINA
+            "taiwan" -> Locale.TAIWAN
+            else -> Locale.KOREA
         }
     }
 
