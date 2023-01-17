@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright 2014 Braden Farmer
+     Copyright 2015 Sean Park
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-  
+
           http://www.apache.org/licenses/LICENSE-2.0
-  
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,69 +19,69 @@
 
 <resources>
 
-    <string name="action_cancel">Cancel</string>
-    <string name="action_close">Close</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_discard">Discard</string>
-    <string name="action_edit">Edit</string>
-    <string name="action_export">Export</string>
-    <string name="action_font_size">Font size</string>
-    <string name="action_new">New Note</string>
-    <string name="action_save">Save</string>
-    <string name="action_settings">Settings</string>
-    <string name="action_share">Share</string>
-    <string name="action_sort_by">Sort notes by</string>
+    <string name="action_cancel">취소</string>
+    <string name="action_close">닫기</string>
+    <string name="action_delete">삭제</string>
+    <string name="action_discard">버리기</string>
+    <string name="action_edit">편집</string>
+    <string name="action_export">보내기</string>
+    <string name="action_font_size">폰트 크기</string>
+    <string name="action_new">새 메모</string>
+    <string name="action_save">저장</string>
+    <string name="action_settings">설정</string>
+    <string name="action_share">공유</string>
     <string name="action_export_filename">Exported filename</string>
-    <string name="app_name">Notepad</string>
-    <string name="app_name_debug">Notepad (Debug)</string>
-    <string name="cab_note_selected">%d note selected</string>
-    <string name="cab_notes_selected">%d notes selected</string>
-    <string name="changes_discarded">Changes discarded</string>
+    <string name="action_sort_by">정렬 순서</string>
+    <string name="app_name">노트패드</string>
+    <string name="app_name_debug">@string/app_name</string>
+    <string name="cab_note_selected">%d 선택됨</string>
+    <string name="cab_notes_selected">%d 선택됨</string>
+    <string name="changes_discarded">변경 취소됨</string>
     <string name="dialog_about_message">Notepad: a simple note-taking app\n\n&#169; %d Braden Farmer\nApp logo by Tobaloidee</string>
-    <string name="dialog_about_title">About Notepad</string>
-    <string name="dialog_are_you_sure">Are you sure?</string>
-    <string name="dialog_delete_button_title">Delete note</string>
-    <string name="dialog_delete_button_title_plural">Delete notes</string>
-    <string name="dialog_save_button_title">Save changes</string>
-    <string name="dialog_save_changes">Do you want to save your changes?</string>
-    <string name="draft_restored">Draft restored</string>
-    <string name="draft_saved">Draft saved</string>
-    <string name="double_tap">Tip: double-tap text to switch to Edit mode</string>
-    <string name="edit_text">Type to add text</string>
-    <string name="empty_note">Please enter some text!</string>
-    <string name="first_run">Welcome to Notepad!\n\nTo create a note, click the New Note button (plus sign).</string>
-    <string name="first_view">To edit a saved note, double-tap the text or click the Edit button (pencil).</string>
-    <string name="import_notes">Import notes</string>
-    <string name="loading_external_file">Failed loading external content (or content type not supported)</string>
-    <string name="no_notes_found">No notes found</string>
-    <string name="note_deleted">Note deleted</string>
-    <string name="note_exported_to">Note exported successfully</string>
-    <string name="note_saved">Note saved</string>
-    <string name="notes_deleted">Notes deleted</string>
-    <string name="notes_exported_to">Notes exported successfully</string>
-    <string name="note_imported_successfully">Note imported successfully</string>
-    <string name="notes_imported_successfully">Notes imported successfully</string>
-    <string name="pref_title_show_dialogs">Ask before saving</string>
-    <string name="send_to">Share note to&#8230;</string>
-    <string name="pref_title_show_date">Show date/time</string>
-    <string name="action_theme">Theme</string>
+    <string name="dialog_about_title">노트패드 정보</string>
+    <string name="dialog_are_you_sure">노트를 삭제하시겠어요?</string>
+    <string name="dialog_delete_button_title">노트 삭제</string>
+    <string name="dialog_delete_button_title_plural">노트 삭제</string>
+    <string name="dialog_save_button_title">변경 저장</string>
+    <string name="dialog_save_changes">변경 내용을 저장하시겠어요?</string>
+    <string name="draft_restored">임시 복구됨</string>
+    <string name="draft_saved">임시 저장됨</string>
+    <string name="double_tap">팁: 문장 더블-탭으로 편집하기</string>
+    <string name="edit_text">여기에 메모 내용을 입력하세요</string>
+    <string name="empty_note">메모 내용이 없습니다</string>
+    <string name="first_run">노트패드입니다!\n\n새 노트를 생성하려면 + 기호를 탭 하세요</string>
+    <string name="first_view">메모를 수정하려면 본문을 더블-탭 하거나 연필을 탭 하세요</string>
+    <string name="import_notes">노트 가져오기</string>
+    <string name="loading_external_file">외부 파일을 읽기는 지원하지 않음</string>
+    <string name="no_notes_found">새 노트를 만드세요</string>
+    <string name="note_deleted">노트 삭제됨</string>
+    <string name="note_exported_to">노트 보내기</string>
+    <string name="note_saved">노트 저장됨</string>
+    <string name="notes_deleted">노트 삭제</string>
+    <string name="notes_exported_to">노트 보내기</string>
+    <string name="note_imported_successfully">노트 불러오기 성공</string>
+    <string name="notes_imported_successfully">노트 불러오기 성공</string>
+    <string name="pref_title_show_dialogs">저장전에 물어보기</string>
+    <string name="send_to">노트 공유하기&#8230;</string>
+    <string name="pref_title_show_date">날짜/시간 보이기</string>
+    <string name="action_theme">테마</string>
     <string name="pref_title_direct_edit">Edit notes directly</string>
     <string name="pref_title_markdown">Markdown/HTML support</string>
     <string name="action_print">Print</string>
-    <string name="action_start_selection">Select notes</string>
-    <string name="action_select_all">Select all</string>
-    <string name="no_notes_to_select">No notes to select</string>
+    <string name="action_start_selection">노트 선택</string>
+    <string name="action_select_all">전체 선택</string>
+    <string name="no_notes_to_select">선택한 노트가 없습니다</string>
     <string name="document">%1$s Document</string>
-    <string name="no_notes_to_export">No notes selected to export</string>
-    <string name="no_notes_to_delete">No notes selected to delete</string>
-    <string name="check_for_updates">Check for Updates</string>
+    <string name="no_notes_to_export">내보낼 노트를 선택하지 않았습니다</string>
+    <string name="no_notes_to_delete">삭제할 노트를 선택하지 않았습니다</string>
+    <string name="check_for_updates">업데이트 확인</string>
     <string name="rtl_layout">Right-to-left layout</string>
-    <string name="pref_title_font_type">Font type</string>
+    <string name="pref_title_font_type">폰트</string>
 
     <string-array name="sort_by_list">
-        <item>Date (newest first)</item>
-        <item>Date (oldest first)</item>
-        <item>Name (A to Z)</item>
+        <item>날짜 (내림차순)</item>
+        <item>Date (oldest first</item>
+        <item>내용 (가나다순)</item>
         <item>Name (Z to A)</item>
     </string-array>
     <string-array name="theme_list">
@@ -105,7 +106,7 @@
         <item>First line + timestamp</item>
         <item>Timestamp + first line</item>
     </string-array>
-    <string name="action_select_language">Language</string>
+    <string name="action_select_language">언어</string>
     <string-array name="language_list">
         <item>English</item>
         <item>Japan</item>
