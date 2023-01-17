@@ -18,19 +18,12 @@ package com.farmerbb.notepad.ui.components
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowForward
-import androidx.compose.material.icons.filled.Delete
-import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material.icons.filled.MoreVert
-import androidx.compose.material.icons.filled.PlaylistAddCheck
-import androidx.compose.material.icons.filled.Save
-import androidx.compose.material.icons.filled.SdCard
-import androidx.compose.material.icons.filled.SelectAll
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.LayoutDirection
 import com.farmerbb.notepad.R
 
@@ -131,6 +124,18 @@ fun ExportButton(onClick: () -> Unit = {}) {
             imageVector = Icons.Filled.SdCard,
             contentDescription = stringResource(R.string.action_export),
             tint = Color.White
+        )
+    }
+}
+
+//중요함 체크 버튼
+@Composable
+fun ImportantButton(onClick: () -> Unit = {}) {
+    IconButton(onClick = onClick) {
+        Icon(
+            imageVector = Icons.Filled.Star,
+            contentDescription = stringResource(R.string.action_export),
+            tint = Color.Black
         )
     }
 }

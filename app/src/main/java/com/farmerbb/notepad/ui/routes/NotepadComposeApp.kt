@@ -71,22 +71,7 @@ import com.farmerbb.notepad.model.NavState.Empty
 import com.farmerbb.notepad.model.NavState.View
 import com.farmerbb.notepad.model.NoteMetadata
 import com.farmerbb.notepad.model.navStateSaver
-import com.farmerbb.notepad.ui.components.AboutDialog
-import com.farmerbb.notepad.ui.components.AppBarText
-import com.farmerbb.notepad.ui.components.BackButton
-import com.farmerbb.notepad.ui.components.DeleteButton
-import com.farmerbb.notepad.ui.components.DeleteDialog
-import com.farmerbb.notepad.ui.components.EditButton
-import com.farmerbb.notepad.ui.components.ExportButton
-import com.farmerbb.notepad.ui.components.FirstRunDialog
-import com.farmerbb.notepad.ui.components.FirstViewDialog
-import com.farmerbb.notepad.ui.components.MultiSelectButton
-import com.farmerbb.notepad.ui.components.NoteListMenu
-import com.farmerbb.notepad.ui.components.NoteViewEditMenu
-import com.farmerbb.notepad.ui.components.NotepadTheme
-import com.farmerbb.notepad.ui.components.SaveButton
-import com.farmerbb.notepad.ui.components.SaveDialog
-import com.farmerbb.notepad.ui.components.SelectAllButton
+import com.farmerbb.notepad.ui.components.*
 import com.farmerbb.notepad.ui.content.EditNoteContent
 import com.farmerbb.notepad.ui.content.NoteListContent
 import com.farmerbb.notepad.ui.content.ViewNoteContent
@@ -484,6 +469,7 @@ private fun NotepadComposeApp(
                 title = note.title
                 backButton = { BackButton(onBack) }
                 actions = {
+                    ImportantButton()
                     EditButton { navState = Edit(state.id) }
                     DeleteButton(onDeleteClick)
                     NoteViewEditMenu(

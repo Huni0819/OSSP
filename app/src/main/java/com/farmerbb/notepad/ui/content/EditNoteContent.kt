@@ -104,6 +104,7 @@ fun EditNoteContent(
         )
     }
 
+    //메모 내용 입력 부분 비어있으면
     if(value.text.isEmpty()) {
         BasicText(
             text = stringResource(id = R.string.edit_text),

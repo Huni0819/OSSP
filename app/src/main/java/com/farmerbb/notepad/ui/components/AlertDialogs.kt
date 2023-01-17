@@ -31,7 +31,7 @@ private val buildYear: Int get() {
     return calendar.get(Calendar.YEAR)
 }
 
-//삭제 버튼 클릭시 생성되는ㅇㅁ 다이얼로그창
+//삭제 버튼 클릭시 생성되는 다이얼로그창
 @Composable
 fun DeleteDialog(
     isMultiple: Boolean = false,

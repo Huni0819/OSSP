@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright 2014 Braden Farmer
 
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,8 +17,9 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          android:installLocation="auto" >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    >
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -41,31 +41,32 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="${appName}"
-        android:theme="@style/Theme.Notepad"
         android:supportsRtl="true"
-        tools:ignore="AppLinkUrlError">
+        android:theme="@style/Theme.Notepad"
+        tools:ignore="AppLinkUrlError"
+        >
 
         <activity-alias
             android:name="com.farmerbb.notepad.MainActivity"
-            android:targetActivity="com.farmerbb.notepad.android.NotepadActivity"
+            android:exported="true"
             android:label="${appName}"
-            android:exported="true">
+            android:targetActivity="com.farmerbb.notepad.android.NotepadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.APP_MAPS" />
             </intent-filter>
-            <meta-data android:name="android.app.shortcuts"
+            <meta-data
+                android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
         </activity-alias>
         <activity-alias
             android:name="com.farmerbb.notepad.activity.NoteEditActivity"
-            android:targetActivity="com.farmerbb.notepad.android.StandaloneEditorActivity"
+            android:exported="true"
             android:label="${appName}"
             android:launchMode="singleTop"
-            android:exported="true">
+            android:targetActivity="com.farmerbb.notepad.android.StandaloneEditorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.EDIT" />
@@ -83,12 +84,12 @@
             android:name="com.farmerbb.notepad.android.NotepadActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.farmerbb.notepad.android.StandaloneEditorActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
 
     </application>
 

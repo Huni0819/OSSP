@@ -159,12 +159,12 @@ private fun listPrefEntries(
     val keys = stringArrayResource(id = keyRes)
     val values = stringArrayResource(id = valueRes)
 
-    if(keys.size != values.size) {
+    if (keys.size != values.size) {
         throw RuntimeException("Keys and values are not the same size")
     }
 
     val map = mutableMapOf<String, String>()
-    for(i in keys.indices) {
+    for (i in keys.indices) {
         map[keys[i]] = values[i]
     }
 

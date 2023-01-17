@@ -25,11 +25,7 @@ import com.farmerbb.notepad.R
 import com.farmerbb.notepad.model.Note
 import com.farmerbb.notepad.model.NoteContents
 import com.farmerbb.notepad.model.NoteMetadata
-import com.farmerbb.notepad.ui.components.AppBarText
-import com.farmerbb.notepad.ui.components.BackButton
-import com.farmerbb.notepad.ui.components.DeleteButton
-import com.farmerbb.notepad.ui.components.NoteViewEditMenu
-import com.farmerbb.notepad.ui.components.SaveButton
+import com.farmerbb.notepad.ui.components.*
 import com.farmerbb.notepad.ui.content.EditNoteContent
 import java.util.Date
 

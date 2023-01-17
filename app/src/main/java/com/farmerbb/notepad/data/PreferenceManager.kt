@@ -39,65 +39,73 @@ class PreferenceManager private constructor(
 ) {
     val isLightTheme get() = Prefs.ColorScheme.mapToFlow { theme -> theme == "light" }
 
-    val backgroundColorRes get() = Prefs.ColorScheme.mapToFlow { theme ->
-        when(theme) {
-            "light" -> R.color.window_background
-            else -> R.color.window_background_dark
+    val backgroundColorRes
+        get() = Prefs.ColorScheme.mapToFlow { theme ->
+            when (theme) {
+                "light" -> R.color.window_background
+                else -> R.color.window_background_dark
+            }
         }
-    }
 
-    val primaryColorRes get() = Prefs.ColorScheme.mapToFlow { theme ->
-        when(theme) {
-            "light" -> R.color.text_color_primary
-            else -> R.color.text_color_primary_dark
+    val primaryColorRes
+        get() = Prefs.ColorScheme.mapToFlow { theme ->
+            when (theme) {
+                "light" -> R.color.text_color_primary
+                else -> R.color.text_color_primary_dark
+            }
         }
-    }
 
-    val secondaryColorRes get() = Prefs.ColorScheme.mapToFlow { theme ->
-        when(theme) {
-            "light" -> R.color.text_color_secondary
-            else -> R.color.text_color_secondary_dark
+    val secondaryColorRes
+        get() = Prefs.ColorScheme.mapToFlow { theme ->
+            when (theme) {
+                "light" -> R.color.text_color_secondary
+                else -> R.color.text_color_secondary_dark
+            }
         }
-    }
-    
+
     //폰트 크기
-    val textFontSize get() = Prefs.FontSize.mapToFlow { fontSize ->
-        when (fontSize) {
-            "smallest" -> 12.sp
-            "small" -> 14.sp
-            "normal" -> 16.sp
-            "large" -> 18.sp
-            else -> 20.sp
+    val textFontSize
+        get() = Prefs.FontSize.mapToFlow { fontSize ->
+            when (fontSize) {
+                "smallest" -> 12.sp
+                "small" -> 14.sp
+                "normal" -> 16.sp
+                "large" -> 18.sp
+                else -> 20.sp
+            }
         }
-    }
 
-    val dateFontSize get() = Prefs.FontSize.mapToFlow { fontSize ->
-        when (fontSize) {
-            "smallest" -> 8.sp
-            "small" -> 10.sp
-            "normal" -> 12.sp
-            "large" -> 14.sp
-            else -> 16.sp
+    val dateFontSize
+        get() = Prefs.FontSize.mapToFlow { fontSize ->
+            when (fontSize) {
+                "smallest" -> 8.sp
+                "small" -> 10.sp
+                "normal" -> 12.sp
+                "large" -> 14.sp
+                else -> 16.sp
+            }
         }
-    }
 
-    val fontFamily get() = Prefs.FontType.mapToFlow { theme ->
-        when(theme) {
-            "sans" -> FontFamily.SansSerif
-            "serif" -> FontFamily.Serif
-            else -> FontFamily.Monospace
+    val fontFamily
+        get() = Prefs.FontType.mapToFlow { theme ->
+            when (theme) {
+                "sans" -> FontFamily.SansSerif
+                "serif" -> FontFamily.Serif
+                else -> FontFamily.Monospace
+            }
         }
-    }
 
-    val s_language get() = Prefs.SelectLanguage.mapToFlow { selectlanguage ->
-        when(selectlanguage) {
-            "english" -> Locale.getDefault()
-            "japan" -> Locale.JAPAN
-            "china" -> Locale.CHINA
-            "taiwan" -> Locale.TAIWAN
-            else -> Locale.KOREA
+    //언어 설정
+    val s_language
+        get() = Prefs.SelectLanguage.mapToFlow { selectlanguage ->
+            when (selectlanguage) {
+                "english" -> Locale.setDefault(Locale.ENGLISH)
+                "japan" -> Locale.setDefault(Locale.JAPANESE)
+                "china" -> Locale.setDefault(Locale.CHINESE)
+                "taiwan" -> Locale.setDefault(Locale.TAIWAN)
+                else -> Locale.setDefault(Locale.KOREAN)
+            }
         }
-    }
 
     val sortOrder get() = Prefs.SortBy.mapToFlow(::toSortOrder)
     val filenameFormat get() = Prefs.ExportFilename.mapToFlow(::toFilenameFormat)
