@@ -25,7 +25,7 @@
     <string name="action_discard">버리기</string>
     <string name="action_edit">편집</string>
     <string name="action_export">보내기</string>
-    <string name="action_font_size">Font size</string>
+    <string name="action_font_size">폰트 크기</string>
     <string name="action_new">새 메모</string>
     <string name="action_save">저장</string>
     <string name="action_settings">설정</string>
@@ -64,19 +64,19 @@
     <string name="pref_title_show_dialogs">저장전에 물어보기</string>
     <string name="send_to">노트 공유하기&#8230;</string>
     <string name="pref_title_show_date">날짜/시간 보이기</string>
-    <string name="action_theme">Theme</string>
+    <string name="action_theme">테마</string>
     <string name="pref_title_direct_edit">Edit notes directly</string>
     <string name="pref_title_markdown">Markdown/HTML support</string>
     <string name="action_print">Print</string>
-    <string name="action_start_selection">Select notes</string>
-    <string name="action_select_all">Select all</string>
-    <string name="no_notes_to_select">No notes to select</string>
+    <string name="action_start_selection">노트 선택</string>
+    <string name="action_select_all">전체 선택</string>
+    <string name="no_notes_to_select">선택한 노트가 없습니다</string>
     <string name="document">%1$s Document</string>
-    <string name="no_notes_to_export">No notes selected to export</string>
-    <string name="no_notes_to_delete">No notes selected to delete</string>
-    <string name="check_for_updates">Check for Updates</string>
+    <string name="no_notes_to_export">내보낼 노트를 선택하지 않았습니다</string>
+    <string name="no_notes_to_delete">삭제할 노트를 선택하지 않았습니다</string>
+    <string name="check_for_updates">업데이트 확인</string>
     <string name="rtl_layout">Right-to-left layout</string>
-    <string name="pref_title_font_type">Font type</string>
+    <string name="pref_title_font_type">폰트</string>
 
     <string-array name="sort_by_list">
         <item>날짜 (내림차순)</item>

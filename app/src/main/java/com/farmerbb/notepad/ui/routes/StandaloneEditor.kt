@@ -31,6 +31,7 @@ fun StandaloneEditorRoute(
     onExit: () -> Unit
 ) {
     val vm: NotepadViewModel = getViewModel()
+    //테마 설정 여부
     val isLightTheme by vm.prefs.isLightTheme.collectAsState()
     val backgroundColorRes by vm.prefs.backgroundColorRes.collectAsState()
     val rtlLayout by vm.prefs.rtlLayout.collectAsState()

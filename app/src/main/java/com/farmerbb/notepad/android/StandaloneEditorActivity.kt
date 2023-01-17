@@ -31,23 +31,29 @@ class StandaloneEditorActivity: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //switch역할
         when(intent.action) {
+            //시작하는 액티비티 지정
             Intent.ACTION_MAIN -> openEditor()
 
+            //다른 앱으로 데이터를 전송할 때 사용
             Intent.ACTION_SEND -> checkPlainText {
                 getExternalContent()?.let(::openEditor) ?: externalContentFailed()
             }
 
+            //수정하기 위해 호출하는 액션
             Intent.ACTION_EDIT -> checkPlainText {
                 intent.getStringExtra(Intent.EXTRA_TEXT)?.let(::openEditor) ?: externalContentFailed()
             }
 
+            //데이터의 URL로 가장 적절한 액티비티를 호출하는 액션
             Intent.ACTION_VIEW -> checkPlainText {
                 vm.loadFileFromIntent(intent) { file ->
                     file?.let(::openEditor) ?: externalContentFailed()
                 }
             }
-
+            
+            //실패
             else -> externalContentFailed()
         }
     }

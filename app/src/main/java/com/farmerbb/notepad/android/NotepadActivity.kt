@@ -64,18 +64,23 @@ class NotepadActivity: ComponentActivity(), FSAFActivityCallbacks {
 
     override fun fsafStartActivityForResult(intent: Intent, requestCode: Int) {
         when(intent.action) {
+            //인텐트 작업을 통해 사용자는 파일을 특정 위치에 저장
             Intent.ACTION_OPEN_DOCUMENT -> intent.type = "text/plain"
+            //인텐트 작업을 통해 사용자는 특정 디렉터리를 선택하여 이 디렉터리 내의 모든 파일 및 하위 디렉터리에 관한 액세스 권한을 앱에 부여
             Intent.ACTION_OPEN_DOCUMENT_TREE -> intent.removeExtra(Intent.EXTRA_LOCAL_ONLY)
         }
-
+        
+        //특정 액티비티 실행
         startActivityForResult(intent, requestCode)
     }
 
+    //액티비티 실행 후 main액티비티로 돌아올때 사용
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         fileChooser.onActivityResult(requestCode, resultCode, data)
     }
 
+    //단축키를 구현
     override fun dispatchKeyShortcutEvent(event: KeyEvent): Boolean {
         return if (event.action == KeyEvent.ACTION_DOWN && event.isCtrlPressed) {
             vm.keyboardShortcutPressed(event.keyCode)
