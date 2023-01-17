@@ -94,5 +94,14 @@ Russian translation by Vladimir Kosolapov"</string>
         <item>First line + timestamp</item>
         <item>Timestamp + first line</item>
     </string-array>
+    <string name="action_select_language">Язык</string>
+    <string-array name="language_list">
+        <item>english</item>
+        <item>japan</item>
+        <item>china</item>
+        <item>taiwan</item>
+        <item>russia</item>
+        <item>korea</item>
+    </string-array>
 
 </resources>

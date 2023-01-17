@@ -107,6 +107,16 @@ fun NotepadPreferenceScreen(
                     valueRes = R.array.exported_filename_list
                 ),
             ),
+            //설정 창에 언어 선택 버튼 생성
+            ListPreference(
+                request = Prefs.SelectLanguage,
+                title = stringResource(id = R.string.action_select_language),
+                singleLineTitle = false,
+                entries = listPrefEntries(
+                    keyRes = R.array.language_list,
+                    valueRes = R.array.language_list
+                ),
+            ),
             SwitchPreference(
                 request = Prefs.ShowDialogs,
                 title = stringResource(id = R.string.pref_title_show_dialogs),

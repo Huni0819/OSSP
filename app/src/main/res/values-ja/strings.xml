@@ -105,5 +105,15 @@
         <item>第1行+日付</item>
         <item>日付+第1行</item>
     </string-array>
+    <string name="action_select_language">言語</string>
+    <string-array name="language_list">
+        <item>english</item>
+        <item>japan</item>
+        <item>china</item>
+        <item>taiwan</item>
+        <item>russia</item>
+        <item>korea</item>
+    </string-array>
+
 
 </resources>

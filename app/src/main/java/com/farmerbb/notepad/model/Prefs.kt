@@ -35,6 +35,8 @@ object PrefKeys {
     val ShowDoubleTapMessage = booleanPreferencesKey("show_double_tap_message")
     val FirstRun = intPreferencesKey("first-run")
     val FirstLoad = intPreferencesKey("first-load")
+    //언어 변경을 위한 변수 추가
+    val SelectLanguage = stringPreferencesKey("select_language")
 }
 
 object Prefs {
@@ -67,6 +69,11 @@ object Prefs {
     object ExportFilename: PreferenceRequest<String>(
         key = PrefKeys.ExportFilename,
         defaultValue = "text-only"
+    )
+
+    object SelectLanguage: PreferenceRequest<String>(
+        key = PrefKeys.SelectLanguage,
+        defaultValue = "english"
     )
 
     object ShowDialogs: PreferenceRequest<Boolean>(
